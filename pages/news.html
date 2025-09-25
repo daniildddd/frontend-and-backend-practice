@@ -4,60 +4,95 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Новости</title>
+		<link rel="stylesheet" href="../style/styles.css" />
+		<!-- Дополнительные стили для новостей (опционально, но рекомендуется) -->
+		<style>
+			/* Стили для новостной страницы */
+			.news-article {
+				background: white;
+				padding: 25px;
+				margin: 25px 0;
+				border-radius: 12px;
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+				border-left: 4px solid #667eea;
+			}
+
+			.news-article h2 {
+				color: #2c3e50;
+				margin-top: 0;
+				font-size: 24px;
+			}
+
+			.meta {
+				color: #7f8c8d;
+				font-size: 14px;
+				margin-bottom: 15px;
+				font-style: italic;
+			}
+
+			.news-article p {
+				line-height: 1.7;
+				color: #34495e;
+			}
+		</style>
 	</head>
 	<body>
-		<div id="header">Хэдер</div>
+		<div class="page-container">
+			<header class="header">Хэдер</header>
 
-		<div id="menu">
-			<ul>
-				<li><a href="../index.html">Главная</a></li>
-				<li><a href="news.html">Новости</a></li>
-				<li><a href="practices.html">Практики</a></li>
-				<li><a href="goods.html">Товары</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
-			</ul>
+			<nav class="nav">
+				<ul class="nav-list">
+					<li><a href="../index.html" class="nav-link">Главная</a></li>
+					<li><a href="news.html" class="nav-link">Новости</a></li>
+					<li><a href="practices.html" class="nav-link">Практики</a></li>
+					<li><a href="goods.html" class="nav-link">Товары</a></li>
+					<li><a href="contacts.html" class="nav-link">Контакты</a></li>
+				</ul>
+			</nav>
+
+			<main class="content">
+				<h1>Новостной блог</h1>
+
+				<div class="news-article">
+					<h2>Заголовок первой новости</h2>
+					<div class="meta">
+						<span class="date">Опубликовано: 15 мая 2024</span> |
+						<span class="author">Автор: Иван Петров</span>
+					</div>
+					<p>
+						Текст первой новости. Здесь содержится основная информация о
+						событии, которое мы освещаем в нашем блоге. Новость может быть любой
+						тематики.
+					</p>
+				</div>
+
+				<div class="news-article">
+					<h2>Заголовок второй новости</h2>
+					<div class="meta">
+						<span class="date">Опубликовано: 10 мая 2024</span> |
+						<span class="author">Автор: Мария Сидорова</span>
+					</div>
+					<p>
+						Текст второй новости. Это еще одно важное событие, которым мы хотим
+						поделиться с нашими читателями. Новость содержит актуальную
+						информацию.
+					</p>
+				</div>
+
+				<div class="news-article">
+					<h2>Заголовок третьей новости</h2>
+					<div class="meta">
+						<span class="date">Опубликовано: 5 мая 2024</span> |
+						<span class="author">Автор: Алексей Козлов</span>
+					</div>
+					<p>
+						Текст третьей новости. Завершающая новость в нашем блоке, которая
+						также заслуживает внимания наших посетителей.
+					</p>
+				</div>
+			</main>
+
+			<footer class="footer">Фуллстек лучше всех</footer>
 		</div>
-
-		<div id="content">
-			<h1>Новостной блог</h1>
-
-			<div class="news-article">
-				<h2>Заголовок первой новости</h2>
-				<div class="meta">
-					<span class="date">Опубликовано: 15 мая 2024</span> |
-					<span class="author">Автор: Иван Петров</span>
-				</div>
-				<p>
-					Текст первой новости. Здесь содержится основная информация о событии,
-					которое мы освещаем в нашем блоге. Новость может быть любой тематики.
-				</p>
-			</div>
-
-			<div class="news-article">
-				<h2>Заголовок второй новости</h2>
-				<div class="meta">
-					<span class="date">Опубликовано: 10 мая 2024</span> |
-					<span class="author">Автор: Мария Сидорова</span>
-				</div>
-				<p>
-					Текст второй новости. Это еще одно важное событие, которым мы хотим
-					поделиться с нашими читателями. Новость содержит актуальную
-					информацию.
-				</p>
-			</div>
-
-			<div class="news-article">
-				<h2>Заголовок третьей новости</h2>
-				<div class="meta">
-					<span class="date">Опубликовано: 5 мая 2024</span> |
-					<span class="author">Автор: Алексей Козлов</span>
-				</div>
-				<p>
-					Текст третьей новости. Завершающая новость в нашем блоке, которая
-					также заслуживает внимания наших посетителей.
-				</p>
-			</div>
-		</div>
-		<div id="footer">Фуллстек лучше всех</div>
 	</body>
 </html>

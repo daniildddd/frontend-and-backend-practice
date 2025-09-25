@@ -4,44 +4,47 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Товары</title>
+		<link rel="stylesheet" href="../style/styles.css" />
 	</head>
 	<body>
-		<div id="header">Хэдер</div>
+		<div class="page-container">
+			<header class="header">Хэдер</header>
 
-		<div id="menu">
-			<ul>
-				<li><a href="../index.html">Главная</a></li>
-				<li><a href="news.html">Новости</a></li>
-				<li><a href="practices.html">Практики</a></li>
-				<li><a href="goods.html">Товары</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
-			</ul>
+			<nav class="nav">
+				<ul class="nav-list">
+					<li><a href="../index.html" class="nav-link">Главная</a></li>
+					<li><a href="news.html" class="nav-link">Новости</a></li>
+					<li><a href="practices.html" class="nav-link">Практики</a></li>
+					<li><a href="goods.html" class="nav-link">Товары</a></li>
+					<li><a href="contacts.html" class="nav-link">Контакты</a></li>
+				</ul>
+			</nav>
+
+			<main class="content">
+				<h1>Каталог товаров</h1>
+
+				<div class="products-grid">
+					<div class="product-card">
+						<img src="../images/goods1.jpg" alt="Товар 1" width="200" />
+						<h3>Гильгамеш</h3>
+						<p class="price">999 руб.</p>
+					</div>
+
+					<div class="product-card">
+						<img src="../images/goods2.jpg" alt="Товар 2" width="200" />
+						<h3>Жизенный уклад</h3>
+						<p class="price">1 499 руб.</p>
+					</div>
+
+					<div class="product-card">
+						<img src="../images/goods3.jpg" alt="Товар 3" width="200" />
+						<h3>Rust</h3>
+						<p class="price">2 299 руб.</p>
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer">фуллстек лучше всех</footer>
 		</div>
-
-		<div id="content">
-			<h1>Каталог товаров</h1>
-
-			<div class="products-grid">
-				<div class="product-card">
-					<img src="../images/goods1.jpg" alt="Товар 1" width="200" />
-					<h3>Гильгамеш</h3>
-					<p class="price">999 руб.</p>
-				</div>
-
-				<div class="product-card">
-					<img src="../images/goods2.jpg" alt="Товар 2" width="200" />
-					<h3>Жизенный уклад</h3>
-					<p class="price">1 499 руб.</p>
-				</div>
-
-				<div class="product-card">
-					<img src="../images/goods3.jpg" alt="Товар 3" width="200" />
-					<h3>Rust</h3>
-					<p class="price">2 299 руб.</p>
-				</div>
-			</div>
-		</div>
-
-		<div id="footer">фуллстек лучше всех</div>
 	</body>
 </html>
